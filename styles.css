@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Signika:wght@600;700&display=swap');
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading.hide {
+  display: none;
+}
+
+
+/* Set body background color */
+body {
+  overflow: hidden;
+  background-color: #f8f8ff;
+  font-family: 'Bruno Ace SC', cursive;
+}
+
+#time {
+  user-select: none;
+}
+
+#logo {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin:8px;
+        }
+       
+#logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Center gas price container vertically and horizontally */
+.gas-price-container {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 1rem;
+}
+
+/* Style the "Current Ethereum Gas Price" text */
+.gas-price-container p {
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  10%{
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.47;
+  }
+  90%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Style the gas price */
+#gasPrice {
+  animation: blink 5s ease-in-out infinite;
+  font-size: 20vw;
+  text-align: center;
+}
+
+#current-stmt {
+  font-size: 1.5vw;
+    margin-bottom: -3rem;
+}
+
+/* Style the gwei title */
+#gwei-title {
+  font-size: calc(20vw/3);
+  text-align: center;
+  margin-top: -3rem;
+}
+
+
+.high-gas {
+    color: #ed1c24;
+}
+
+.medium-gas {
+    color: #fada5e;
+}
+
+.low-gas {
+    color: #00ff7f;
+}
+
+footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      background-color: #f0f0ff;
+      width: 100%;
+      color: black;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+    }
+
+.footer-link {
+  text-decoration: none;
+  color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow: scroll;
+  }
+
+.gas-price-container {
+  margin-top: -2rem;
+}
+
+  #gasPrice {
+  font-size: 50vw;
+}
+
+#current-stmt {
+  font-size: 4vw;
+    margin-bottom: -3rem;
+}
+
+/* Style the gwei title */
+#gwei-title {
+  font-size: calc(50vw/3);
+  text-align: center;
+  margin-top: -3rem;
+}
+  }
+
+  /* Small devices (landscape phones, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:991px){
+   body {
+    overflow: scroll;
+  }
+
+  .gas-price-container {
+  margin-top: 0;
+}
+
+  #gasPrice {
+  font-size: 50vw;
+}
+
+#current-stmt {
+  font-size: 4vw;
+    margin-bottom: -3rem;
+}
+
+/* Style the gwei title */
+#gwei-title {
+  font-size: calc(50vw/3);
+  text-align: center;
+  margin-top: -3rem;
+}
+
+}
+
