@@ -20,6 +20,7 @@
 
 /* Set body background color */
 body {
+  height: -webkit-fill-available;
   overflow: hidden;
   background-color: #f8f8ff;
   font-family: 'Bruno Ace SC', cursive;
