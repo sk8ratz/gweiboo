@@ -31,6 +31,7 @@ body {
   overflow: hidden;
    background-color: #f8f8ff;
   font-family: 'Bruno Ace SC', cursive;
+  position: fixed;
 }
 
 #time {
