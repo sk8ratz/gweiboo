@@ -143,7 +143,6 @@ footer {
 @media only screen and (max-width: 600px) {
   #loading img {
     width: 30vw;
-    margin-top: -5rem;
     }
 
   body {
