@@ -36,14 +36,14 @@ body {
 #time {
   margin: 8px;
   user-select: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 }
 
 #logo {
             margin: 8px;
-            position: absolute;
+            position: fixed;
             top: 0;
             right: 0;
         }
@@ -60,8 +60,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin-top: 3rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Style the "Current Ethereum Gas Price" text */
@@ -152,7 +154,7 @@ footer {
   }
 
 .gas-price-container {
-  margin-top: 0;
+  margin-top: -1rem;
 }
 
   #gasPrice {
@@ -188,7 +190,7 @@ footer {
   }
 
   .gas-price-container {
-  margin-top: 0;
+  margin-top: -1rem;
 }
 
   #gasPrice {
