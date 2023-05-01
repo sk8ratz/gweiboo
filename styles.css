@@ -97,7 +97,7 @@ body {
 /* Style the gas price */
 #gasPrice {
   animation: blink 5s ease-in-out infinite;
-  font-size: 20vw;
+  font-size: 18vw;
   text-align: center;
 }
 
@@ -120,6 +120,8 @@ body {
 
 .medium-gas {
     color: #ffc40c;
+    text-shadow: 0 0 0.1rem #ffc40c;
+
 }
 
 .low-gas {
@@ -160,7 +162,7 @@ footer {
 }
 
   #gasPrice {
-  font-size: 50vw;
+  font-size: 45vw;
 }
 
 #current-stmt {
@@ -196,7 +198,7 @@ footer {
 }
 
   #gasPrice {
-  font-size: 50vw;
+  font-size: 45vw;
 }
 
 #current-stmt {
