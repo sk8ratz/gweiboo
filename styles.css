@@ -18,6 +18,7 @@
 #loading img {
 width: 10vw;
 margin: 0, auto;
+margin-top: -5rem;
 }
 
 #loading.hide {
@@ -64,7 +65,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -45%);
 }
 
 /* Style the "Current Ethereum Gas Price" text */
@@ -118,7 +119,7 @@ body {
 }
 
 .medium-gas {
-    color: #fada5e;
+    color: #ffc40c;
 }
 
 .low-gas {
