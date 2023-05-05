@@ -28,11 +28,11 @@ async function displayGasPrice() {
   gasPriceElement.textContent = roundedGasPrice;
   document.title = roundedGasPrice + " gwei";
 
-  if (roundedGasPrice > 100) {
+  if (roundedGasPrice > 99) {
     gasPriceElement.classList.remove("medium-gas");
     gasPriceElement.classList.remove("low-gas");
     gasPriceElement.classList.add("high-gas");
-  } else if (roundedGasPrice > 50) {
+  } else if (roundedGasPrice > 49) {
     gasPriceElement.classList.remove("high-gas");
     gasPriceElement.classList.remove("low-gas");
     gasPriceElement.classList.add("medium-gas");
