@@ -230,6 +230,7 @@ body {
     background-color: #f0f0ff; /* Background color for the toggle container */
     border-radius: 20px;
     padding: 5px;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* Icon styles */
