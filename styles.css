@@ -51,7 +51,12 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  cursor: default;
+  cursor: pointer;
+  }
+
+  .demo-rtn{
+    text-decoration: none;
+    color: white;
   }
 
 
@@ -62,13 +67,15 @@ body {
     filter:invert(1);
   }
   .demo-video{
-    height: 97vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .demo-video video{
+    position: fixed;
+    top:75px;
     height: 70vh;
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
@@ -111,6 +118,11 @@ body {
 #logo:active #tooltip{
   display: block;
 }
+
+body:focus #tooltip{
+  display: none;
+}
+
 
 .dark-mode #tooltip {
   background-color: #1F0925;
@@ -305,13 +317,6 @@ footer {
   margin-top: -3rem;
 }
 
-
-@supports (-webkit-touch-callout: none) {
-  /* Add a margin bottom for the toggle only in PWA (Apple devices) */
-  #dark-mode-toggle {
-    bottom: 70px;
-  }
-
 #tooltip {
   width: 155px;
   top:25px;
@@ -322,6 +327,15 @@ width: 155px;
 top:25px;
 transform: translateX(0%);
 }
+
+
+@supports (-webkit-touch-callout: none) {
+  /* Add a margin bottom for the toggle only in PWA (Apple devices) */
+  #dark-mode-toggle {
+    bottom: 80px;
+  }
+
+
   }
 
   /* Small devices (landscape phones, 768px and up) */
