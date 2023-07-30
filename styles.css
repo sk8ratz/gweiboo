@@ -230,13 +230,7 @@ body {
     background-color: #f0f0ff; /* Background color for the toggle container */
     border-radius: 20px;
     padding: 5px;
-    padding-bottom: env(safe-area-inset-bottom);
 }
-@supports (-webkit-touch-callout: none) {
-  /* Add a margin bottom for the toggle only in PWA (Apple devices) */
-  #dark-mode-toggle {
-    margin-bottom: 20px;
-  }
 
 /* Icon styles */
 .toggle-icon {
@@ -311,9 +305,12 @@ footer {
   margin-top: -3rem;
 }
 
-#dark-mode-toggle{
-    right: 5px;
-}
+
+@supports (-webkit-touch-callout: none) {
+  /* Add a margin bottom for the toggle only in PWA (Apple devices) */
+  #dark-mode-toggle {
+    bottom: 70px;
+  }
 
 #tooltip {
   width: 155px;
