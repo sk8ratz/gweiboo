@@ -14,6 +14,9 @@
   justify-content: center;
   align-items: center;
 }
+.dark-mode #loading{
+  background-color:#1F0935;
+}
 
 #loading img {
 width: 10vw;
@@ -43,13 +46,94 @@ body {
   left: 0;
 }
 
-#logo {
-            margin: 8px;
-            position: fixed;
-            top: 0;
-            right: 0;
-        }
-       
+#logo {     
+  margin: 8px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  cursor: default;
+  }
+
+
+  .return-arw{
+    height: 13px;
+  }
+  .dark-mode .return-arw{
+    filter:invert(1);
+  }
+  .demo-video{
+    height: 97vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .demo-video video{
+    height: 70vh;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+
+
+  .info-icon{
+    height: 13px;
+    cursor: pointer;
+  }
+
+  .info-icon-dark{
+    filter: invert(1);
+  }
+
+  #tooltip {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: #f0f0ff;
+  box-shadow: gray;
+  color: black;
+  border-radius: 10px;
+  width: 180px;
+  font-family: Arial, sans-serif;
+      font-size: 12px;
+      line-height: 18px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* Add additional styling for the tooltip here */
+}
+#logo:hover #tooltip{
+  display: block;
+}
+#logo:focus #tooltip{
+  display: block;
+}
+#logo:active #tooltip{
+  display: block;
+}
+
+.dark-mode #tooltip {
+  background-color: #1F0925;
+  box-shadow: gray;
+  color: white;
+  border-radius: 10px;
+  width: 180px;
+  font-family: Arial, sans-serif;
+      font-size: 12px;
+      line-height: 18px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* Add additional styling for the tooltip here */
+}
+
+.demo{
+  text-decoration: none;
+  color: purple;
+}
+.dark-mode .demo{
+  text-decoration: none;
+  color: lightblue;
+}
+
 #logo-link {
     text-decoration: none;
     color: inherit;
@@ -71,7 +155,6 @@ body {
 /* Style the "Current Ethereum Gas Price" text */
 .gas-price-container p {
   font-size: 1rem;
-  color: black;
   text-align: center;
 }
 
@@ -128,6 +211,51 @@ body {
     color: #00ff7f;
 }
 
+
+.dark-mode {
+  background-color: #1F0935;
+  color: white;
+}
+
+.dark-mode .info-icon{
+  filter:invert(1);
+}
+
+#dark-mode-toggle {
+    position: fixed;
+  bottom: 50px;
+  right: 20px;
+    display: flex;
+    width: auto;
+    background-color: #f0f0ff; /* Background color for the toggle container */
+    border-radius: 20px;
+    padding: 5px;
+}
+
+/* Icon styles */
+.toggle-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.dark-mode #dark-mode-toggle{
+  background-color: #1F0925;
+}
+.dark-mode .toggle-icon{
+  filter: invert(1);
+}
+
+.dark-mode footer{
+  background-color: #1F0925;
+  color: white;
+}
+
+.dark-mode .footer-link{
+  color: lightblue;
+}
+
+
 footer {
       position: fixed;
       padding-bottom: env(safe-area-inset-bottom);
@@ -143,7 +271,7 @@ footer {
 
 .footer-link {
   text-decoration: none;
-  color: blue;
+  color: purple;
 }
 
 @media only screen and (max-width: 600px) {
@@ -176,8 +304,22 @@ footer {
   text-align: center;
   margin-top: -3rem;
 }
-  }
 
+#dark-mode-toggle{
+    right: 5px;
+}
+
+#tooltip {
+  width: 155px;
+  top:25px;
+  transform: translateX(0%);
+}
+.dark-mode #tooltip{
+width: 155px;
+top:25px;
+transform: translateX(0%);
+}
+  }
 
   /* Small devices (landscape phones, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width:991px){

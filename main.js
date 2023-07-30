@@ -1,15 +1,28 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme){
+    document.body.classList.add(savedTheme);
+  }
+});
+
+function darkMode() {
+  document.body.classList.toggle("dark-mode");
+  const theme = document.body.classList.contains("dark-mode") ? "dark-mode" : "light";
+  localStorage.setItem("theme", theme);
+}
+
+
 window.addEventListener("load", function () {
   const loader = document.getElementById("loading");
   const content = document.getElementById("content");
 
-  // wait for gas price to be loaded
   const checkGasPrice = setInterval(function() {
     if (document.getElementById("gasPrice").innerHTML !== "") {
       clearInterval(checkGasPrice);
       loader.classList.add("hide");
       content.style.display = "block";
     }
-  }, 500); // check every 0.5 seconds
+  }, 500); 
 });
 
 const apiKey = process.env.API_KEY;
@@ -46,25 +59,18 @@ async function displayGasPrice() {
 displayGasPrice();
 setInterval(displayGasPrice, 5000);
 
-// Get the time element
 const timeEl = document.getElementById("time");
 
-// Function to update the time every second
 function updateTime() {
-  // Get the current time
   const now = new Date();
   
-  // Format the time as HH:MM:SS
   const timeStr = now.getUTCHours().toString().padStart(2, "0") + ":" + 
                    now.getUTCMinutes().toString().padStart(2, "0") + ":" + 
                    now.getUTCSeconds().toString().padStart(2, "0");
 
-  // Update the time element
   timeEl.textContent = "UTC " + timeStr;
   
-  // Call this function again in one second
   setTimeout(updateTime, 1000);
 }
 
-// Call the updateTime function to start updating the time
 updateTime();

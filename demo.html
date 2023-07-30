@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#f0f0ff">
+    <title>gwei.boo demo</title>
+    <meta name="description" content="Get the current Ethereum gas price in gwei right now with gwei.boo. Providing you the most up to date Ethereum gas prices with real-time updates every 5 seconds from the Etherscan API. Stay informed and save money on gas with gwei.boo.">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon2.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="gwei.boo">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://gwei.boo/images/apple-icon.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta property="og:image" content="http://gwei.boo/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://gwei.boo/images/twitter-image.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="demo.js"></script>
+  </head>
+  <body>
+    <div id="loading">
+      <img src="/images/logo2.png" alt="gwei.boo">
+    </div>
+  <span id="time"></span>
+    <div id="logo"><a href="index.html"><img src="/images/return.svg" class="return-arw"></a>
+        GWEI.BOO
+    </div>
+    <div class="demo-video">
+    <video src="/images/demo.mp4" autoplay loop muted disablePictureInPicture playsinline>
+            </video></div>
+  <div id="dark-mode-toggle" onclick="darkMode()">
+        <img class="toggle-icon moon" src="images/darkmode.svg">
+    </div>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+    <script src="bundle.js"></script>
+    <footer>
+    <p>Made by <a href="https://github.com/sk8ratz" class="footer-link" target="_blank">Lab Ratz</a> | Powered by <a href="https://etherscan.io/gastracker" class="footer-link" target="_blank">Etherscan</a></p>
+  </footer>
+  </body>
+</html>

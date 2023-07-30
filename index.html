@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon2.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="gwei.boo">
+    <meta name="apple-mobile-web-app-title" content="gwei.boo demo">
     <link rel="apple-touch-icon" sizes="180x180" href="http://gwei.boo/images/apple-icon.png">
     <meta name="apple-mobile-web-app-status-bar-style" content="white">
     <meta property="og:image" content="http://gwei.boo/images/og-image.jpg">
@@ -19,6 +19,7 @@
   <meta name="twitter:image" content="http://gwei.boo/images/twitter-image.jpg">
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
   </head>
   <body>
     <div id="loading">
@@ -27,14 +28,20 @@
     <div id="content" style="display: none;">
   </div>
   <span id="time"></span>
-    <div id="logo">
-        <a href="https://twitter.com/gwei_boo" target="_blank" id="logo-link">GWEI.BOO</a>
+    <div id="logo"><img src="/images/info.svg" class="info-icon">
+        GWEI.BOO
+        <div id="tooltip">
+          GWEI.BOO is a Progressive Web App. Add it to the home screen of your phone and it will function just like any other app.  Click <a href="demo.html" class="demo">here</a> to see how!
+        </div>
     </div>
   <div class="gas-price-container">
     <p id="current-stmt">Ethereum Gas</p>
     <p><span id="gasPrice"></span></p>
     <p id="gwei-title">GWEI</p>
   </div>
+  <div id="dark-mode-toggle" onclick="darkMode()">
+        <img class="toggle-icon moon" src="images/darkmode.svg">
+    </div>
     <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
     <script src="bundle.js"></script>
     <footer>
