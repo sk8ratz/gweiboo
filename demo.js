@@ -6,21 +6,13 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-function darkMode() {
-  document.body.classList.toggle("dark-mode");
-  const theme = document.body.classList.contains("dark-mode") ? "dark-mode" : "light";
-  localStorage.setItem("theme", theme);
-}
-
-
-
 function hideLoadingScreen() {
     const loader = document.getElementById("loading");
     loader.classList.add("hide");
   }
 
   // Wait for 1 second (1000 milliseconds) and then hide the loading screen
-  setTimeout(hideLoadingScreen, 500);
+  setTimeout(hideLoadingScreen, 1000);
 
 // Get the time element
 const timeEl = document.getElementById("time");

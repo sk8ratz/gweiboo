@@ -56,6 +56,11 @@ body {
 
   .demo-rtn{
     text-decoration: none;
+    color: black;
+  }
+
+  .dark-mode .demo-rtn{
+    text-decoration: none;
     color: white;
   }
 
@@ -122,7 +127,9 @@ body {
 body:focus #tooltip{
   display: none;
 }
-
+body:active #tooltip{
+  display: none;
+}
 
 .dark-mode #tooltip {
   background-color: #1F0925;
