@@ -52,6 +52,7 @@ body {
   top: 0;
   right: 0;
   cursor: pointer;
+  user-select: none;
   }
 
   .demo-rtn{
@@ -89,12 +90,20 @@ body {
 
   .info-icon{
     height: 13px;
-    cursor: pointer;
   }
 
   .info-icon-dark{
     filter: invert(1);
   }
+
+  .info-icon:focus #tooltip{
+    display: block;
+  }
+
+  .show-tooltip #tooltip {
+  display: block;
+}
+
 
   #tooltip {
   display: none;
@@ -114,22 +123,8 @@ body {
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   /* Add additional styling for the tooltip here */
 }
-#logo:hover #tooltip{
-  display: block;
-}
-#logo:focus #tooltip{
-  display: block;
-}
-#logo:active #tooltip{
-  display: block;
-}
 
-body:focus #tooltip{
-  display: none;
-}
-body:active #tooltip{
-  display: none;
-}
+
 
 .dark-mode #tooltip {
   background-color: #1F0925;
@@ -249,6 +244,7 @@ body:active #tooltip{
     background-color: #f0f0ff; /* Background color for the toggle container */
     border-radius: 20px;
     padding: 5px;
+    user-select: none;
 }
 
 /* Icon styles */
@@ -286,6 +282,7 @@ footer {
       text-align: center;
       font-family: Arial, sans-serif;
       font-size: 12px;
+      user-select: none;
     }
 
 .footer-link {

@@ -74,3 +74,10 @@ function updateTime() {
 }
 
 updateTime();
+
+function toggleTooltip() {
+  const logo = document.getElementById('logo');
+  logo.classList.toggle('show-tooltip');
+}
+
+

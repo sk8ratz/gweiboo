@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover", maximum-scale=1.0, user-scalable="no">
     <meta name="theme-color" content="#f0f0ff">
     <title>gwei.boo</title>
     <meta name="description" content="Get the current Ethereum gas price in gwei right now with gwei.boo. Providing you the most up to date Ethereum gas prices with real-time updates every 5 seconds from the Etherscan API. Stay informed and save money on gas with gwei.boo.">
@@ -28,7 +28,8 @@
     <div id="content" style="display: none;">
   </div>
   <span id="time"></span>
-    <div id="logo"><img src="/images/info.svg" class="info-icon">
+    <div id="logo" onclick="toggleTooltip()">
+      <img src="/images/info.svg" class="info-icon">
         GWEI.BOO
         <div id="tooltip">
           GWEI.BOO is a Progressive Web App. Add it to the home screen of your phone and it will function just like any other app.  Click <a href="demo.html" class="demo">here</a> to see how!
